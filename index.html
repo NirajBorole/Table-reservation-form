@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resevation Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Meow+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="col">
+            <img class="hero-img" src="./img/people-in-hotel-lounge.jpg" alt="group of people in meeting">
+            <h4 class="hero-text">
+                Make your moments delightful here
+            </h4>
+        </div>
+        <div class="col">
+            <form method="post" action="">
+                <label for="customer name">Customer Name</label>
+                <input type="text" name="Customer Name" id="cust_name" placeholder="Name" required>
+                <label for="Contact number">Contact Number</label>
+                <input type="tel" name="Mobile Number" id="contactnum" placeholder="Contact number" required>
+                <label for="Date">Reservation Date</label>
+                <input type="date" required>
+                <label for="Time">Reservation Time</label>
+                <input type="time" name="Reservation time" id="reservation" required>
+                <label for="Guest count">Guest count</label>
+                <input type="number" name="Guest Count" min="1" id="gcount" placeholder="Number of people" required>
+                <label for="note">Special note</label>
+                <input type="text" name="Note" id="note" placeholder="Any special request">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+    </main>
+</body>
+
+</html>

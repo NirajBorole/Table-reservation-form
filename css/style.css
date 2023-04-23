@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    gap: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+}
+
+input {
+    width: 18rem;
+    height: 1rem;
+    padding: 1rem;
+    border: 1px solid grey;
+    border-radius: 2rem;
+}
+
+button {
+    width: 150px;
+    padding: 1rem;
+    background-color: #50ceff;
+    border: 1px solid #f1fbff;
+    border-radius: 2rem;
+}
+
+input:focus,
+button:focus,
+button:hover {
+    background-color: #fff;
+    border-color: #8ddfff;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #8ddfff80;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100vh;
+}
+
+img {
+    object-fit: cover;
+}
+
+.hero-img {
+    position: relative;
+    opacity: 0.3;
+}
+
+.hero-text {
+    position: absolute;
+    font-family: 'Meow Script', cursive;
+    font-size: 46px;
+    color: #292dfd;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 920px) {
+    main {
+        display: block;
+    }
+
+    .hero-text {
+        top: 50%;
+        left: 50%;
+    }
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    main {
+        display: block;
+    }
+
+    .hero-text {
+        top: 50%;
+        left: 50%;
+    }
+
+}
